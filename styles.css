@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+}
+.container{
+   display: grid;
+   grid-template-columns: 1fr;
+}  /*css grid section*/
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.left-sect{
+ display: flex;
+}
+.right-sect{
+    font-family: Arial, Helvetica, sans-serif;
+   font-size: medium;
+}/*name section JOEL JOHN GEORGE*/
+.nav-wrapper>.left-sect>div{
+    margin-right: 20px;
+    font-size :0.92 em;
+}
+
+.nav-link-wrapper{
+    height:25px;
+    border-bottom: 1px solid transparent;
+    transform: border-bottom 0.8s;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.nav-link-wrapper a{
+    color:lightseagreen;
+    text-decoration: none;
+    transition: color 0.8s;
+
+}
+/*enabiling black transition when mouse is pointed*/
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+   color: black;
+}
+
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+.active-nav-link a{
+    color:black !important;
+}
+
+/*portfolio style section*/
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height:350px;
+    width: 100%;
+    background-size: cover; /*covering the image so that no gaps occur in between*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 60px;
+} /*image text aligning part*/
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom:30px ;
+}
+.img-text-wrapper .subtitle{/*Space mandatory*/
+    transition: 1s;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    text-align: justify;
+}
+.img-text-wrapper:hover .subtitle{
+    font-weight: 400;
+    color:lightseagreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.img-dark{
+    transition: 1s;
+    filter: brightness(5%);
+}
+
+/*About section styles*/
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img{
+    width: 600px;
+    height:500px;
+    margin-left: 50px;
+}
+
+.profile-content-wrapper{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 20px;   
+}
+
+.profile-content-wrapper h2{
+    color:lightseagreen;
+}
